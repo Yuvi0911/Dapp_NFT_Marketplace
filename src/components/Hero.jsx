@@ -6,6 +6,7 @@ const Hero = () => {
 //   const onCreatedNFT = () => {
 //     setGlobalState('modal', 'scale-100')
 //   }
+const connectedAccount = false;
 
   return (
     <div
