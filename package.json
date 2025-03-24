@@ -1,7 +1,7 @@
 {
   "name": "TimelessNFTs",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.22.22",
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
