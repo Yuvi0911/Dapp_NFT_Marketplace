@@ -9,6 +9,8 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.23.0",
     "ipfs-http-client": "^59.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
