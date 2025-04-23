@@ -1,0 +1,4 @@
+1) humne smart contract se interaction krne vali saari functionality Blockchain.services.js file me rakhi hui h.
+2) smart contract humne Blockchain folder k andar DApp_smart_contract k andar likha hua h hardhat ki help se deploy kr rhka h.
+3) smart contract se interaction k liye humnne web3 library use kr rkhi h.
+4) smart contract ko ethereum sepolia aur hardhat localhost pr deploy kr rkha h. Hum dono me se kisi ka bhi address use kr skte h.

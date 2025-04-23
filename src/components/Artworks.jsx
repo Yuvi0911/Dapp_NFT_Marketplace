@@ -1,19 +1,19 @@
 import { useEffect, useState } from 'react'
-// import { setGlobalState, useGlobalState } from '../store'
+import { setGlobalState, useGlobalState } from '../store'
 
 const Artworks = () => {
-//   const [nfts] = useGlobalState('nfts')
+  const [nfts] = useGlobalState('nfts')
   const [end, setEnd] = useState(4)
   const [count] = useState(4)
   const [collection, setCollection] = useState([])
 
-//   const getCollection = () => {
-//     return nfts.slice(0, end)
-//   }
+  const getCollection = () => {
+    return nfts.slice(0, end)
+  }
 
-//   useEffect(() => {
-//     setCollection(getCollection())
-//   }, [nfts, end])
+  useEffect(() => {
+    setCollection(getCollection())
+  }, [nfts, end])
 
   return (
     <div className="bg-[#151c25] gradient-bg-artworks">
@@ -34,7 +34,7 @@ const Artworks = () => {
               className="shadow-xl shadow-black text-white
             bg-[#e32970] hover:bg-[#bd255f]
             rounded-full cursor-pointer p-2"
-            //   onClick={() => setEnd(end + count)}
+              onClick={() => setEnd(end + count)}
             >
               Load More
             </button>
@@ -46,10 +46,10 @@ const Artworks = () => {
 }
 
 const Card = ({ nft }) => {
-//   const setNFT = () => {
-//     setGlobalState('nft', nft)
-//     setGlobalState('showModal', 'scale-100')
-//   }
+  const setNFT = () => {
+    setGlobalState('nft', nft)
+    setGlobalState('showModal', 'scale-100')
+  }
 
   return (
     <div className="w-full shadow-xl shadow-black rounded-md overflow-hidden bg-gray-800 my-2 p-3">

@@ -1,10 +1,9 @@
 import timelessLogo from '../assets/timeless.png'
-// import { connectWallet } from '../Blockchain.Services'
-// import { useGlobalState, truncate } from '../store'
+import { connectWallet } from '../Blockchain.services';
+import { useGlobalState, truncate } from '../store'
 
 const Header = () => {
-//   const [connectedAccount] = useGlobalState('connectedAccount')
-const connectedAccount = false;
+  const [connectedAccount] = useGlobalState('connectedAccount')
   return (
     <nav className="w-4/5 flex md:justify-center justify-between items-center py-4 mx-auto">
       <div className="md:flex-[0.5] flex-initial justify-center items-center">
@@ -39,7 +38,7 @@ const connectedAccount = false;
           className="shadow-xl shadow-black text-white
         bg-[#e32970] hover:bg-[#bd255f] md:text-xs p-2
           rounded-full cursor-pointer"
-        //   onClick={connectWallet}
+          onClick={connectWallet}
         >
           Connect Wallet
         </button>

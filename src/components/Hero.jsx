@@ -1,12 +1,11 @@
 import Identicon from 'react-identicons'
-// import { setGlobalState, useGlobalState, truncate } from '../store'
+import { setGlobalState, useGlobalState, truncate } from '../store'
 
 const Hero = () => {
-//   const [connectedAccount] = useGlobalState('connectedAccount')
-//   const onCreatedNFT = () => {
-//     setGlobalState('modal', 'scale-100')
-//   }
-const connectedAccount = false;
+  const [connectedAccount] = useGlobalState('connectedAccount')
+  const onCreatedNFT = () => {
+    setGlobalState('modal', 'scale-100')
+  }
 
   return (
     <div
@@ -29,7 +28,7 @@ const connectedAccount = false;
             className="shadow-xl shadow-black text-white
             bg-[#e32970] hover:bg-[#bd255f]
             rounded-full cursor-pointer p-2"
-            // onClick={onCreatedNFT}
+            onClick={onCreatedNFT}
           >
             Create NFT
           </button>
