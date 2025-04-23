@@ -970,8 +970,8 @@ const getEthereumContract = async() => {
 
         // const contract = new web3.eth.Contract(abi.abi, networkData.address);
         // humne ye smart contract sepolia ethereum chain pr deploy kiya h uska address h ye. Smart contract blockchain folder me DApp_Smart_Contract file k andar h.
-        // const contract = new web3.eth.Contract(abi, "0xD66dEd0E6EE16246dA51987BB0789BaDfC9f93b8");  // Sepolia
-        const contract = new web3.eth.Contract(abi, "0x5FbDB2315678afecb367f032d93F642f64180aa3"); // localhost
+        const contract = new web3.eth.Contract(abi, "0xD66dEd0E6EE16246dA51987BB0789BaDfC9f93b8");  // Sepolia
+        // const contract = new web3.eth.Contract(abi, "0x5FbDB2315678afecb367f032d93F642f64180aa3"); // localhost
         // ab contract ki help se hum smart contract k functions ko use kr skte h.
         return contract;
     }

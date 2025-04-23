@@ -8,5 +8,5 @@ module.exports = async (deployer) => {
   const accounts = await web3.eth.getAccounts()
 
   // iski help se hum Timeless vali class ko deploy kr rhe h aur automatically constructor call ho jaiye ga jisme ye parameter pass ho jaiye ge.
-  await deployer.deploy(TimelessNFT, 'Timeless NFTs', 'TNT', 10, accounts[1])
+  await deployer.deploy(babel-register)
 }
